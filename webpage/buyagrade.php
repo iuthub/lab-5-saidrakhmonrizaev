@@ -18,7 +18,7 @@
 		<hr />
 		
 
-	<form action="buyagrade.php" method="POST">
+	<form action="sucker.php" method="post">
 			<h2>Give Us Your Money</h2>
 
 
@@ -31,6 +31,7 @@
 			<dt>Section</dt>
 			<dd>
 				<select name="section" >
+					<option disabled>Choose Section</option>
 					<option value="001">001</option>
 					<option value="002">002</option>
 					<option value="003">003</option>
@@ -40,8 +41,8 @@
 			
 			<dt>Credit Card</dt>
 			<dd>
-				<input type="text"  name="credit_card_t" /><br />
-				<input type="radio" name="credit_card_t" value="Vise" />Visa 
+				<input type="text"  name="credit_card" /><br />
+				<input type="radio"  name="credit_card_t" value="Visa" />Visa 
 				<input type="radio" name="credit_card_t" value="MasterCard" />MasterCard
 			</dd>
 		</dl>
@@ -51,17 +52,11 @@
 	
 
 		
-			<button type="button"><p> I am a giant sucker.</p></button>
-			<pre>
-			<?php print($_POST);?>
-			</pre>
-		
-
-
-
-
-	</form>
-
+			<input type="submit" value="I am a giant sucker."> 
+			
+			
+	</form>	
+	
 
 	</body>
 </html>
